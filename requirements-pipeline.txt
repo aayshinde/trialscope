@@ -1,0 +1,14 @@
+# Everything needed to run the full pipeline, tests and orchestration:  pip install -r requirements-pipeline.txt
+-r requirements.txt
+# data engineering
+dbt-core>=1.10
+dbt-duckdb>=1.9
+prefect>=3.0
+requests>=2.31
+rapidfuzz>=3.0
+tqdm>=4.66
+tabulate>=0.9
+# experiment tracking
+mlflow>=2.14
+# tests
+pytest>=8.0

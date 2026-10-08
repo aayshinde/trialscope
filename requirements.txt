@@ -1,0 +1,19 @@
+# Runtime for the dashboard (what a hosted copy installs). Libraries whose objects are unpickled from models/ are pinned,
+# because a model trained with one version is not guaranteed to load under another.
+streamlit>=1.50
+duckdb>=1.1
+pandas==2.3.3
+numpy==2.5.3
+pyarrow>=15
+scikit-learn==1.9.1
+xgboost==3.4.1
+lifelines==0.30.3
+scipy>=1.11
+matplotlib>=3.8
+python-dotenv>=1.0
+pydantic>=2.6
+# optional LLM agent (works with OpenAI or a local Ollama model); the dashboard falls back to SQL answers without it
+openai>=1.40
+langchain-core>=0.3
+langchain-openai>=0.2
+langgraph>=0.2

@@ -1,0 +1,12 @@
+# docker compose up                       -> dashboard on http://localhost:8501 (from the deploy/ bundle)
+# docker compose run --rm pipeline        -> full pipeline on real data (writes ./data ./warehouse ./models ./results)
+services:
+  app:
+    build: .
+    ports: ["8501:8501"]
+  pipeline:
+    profiles: ["pipeline"]
+    image: python:3.12-slim
+    working_dir: /work
+    volumes: [".:/work"]
+    command: sh -c "pip install -q -r requirements-pipeline.txt && python run_pipeline.py --limit 30000"
