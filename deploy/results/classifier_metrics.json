@@ -1,0 +1,87 @@
+{
+  "cohorts": {
+    "train": {
+      "n": 6528,
+      "years": "2008-2015",
+      "termination_rate": 0.1086
+    },
+    "val": {
+      "n": 1011,
+      "years": "2016-2016",
+      "termination_rate": 0.1078
+    },
+    "test": {
+      "n": 3029,
+      "years": "2017-2019",
+      "termination_rate": 0.1023
+    }
+  },
+  "termination": {
+    "xgboost": {
+      "auroc": 0.7119,
+      "auprc": 0.2209,
+      "brier": 0.0862,
+      "flagged_top10": 0.271,
+      "flagged_top20": 0.4677,
+      "base_rate": 0.1023
+    },
+    "phase_x_area_rate": {
+      "auroc": 0.6439,
+      "auprc": 0.1922,
+      "brier": 0.089,
+      "flagged_top10": 0.2484,
+      "flagged_top20": 0.4258,
+      "base_rate": 0.1023
+    },
+    "logistic_structured": {
+      "auroc": 0.6559,
+      "auprc": 0.2034,
+      "brier": 0.0885,
+      "flagged_top10": 0.2387,
+      "flagged_top20": 0.3742,
+      "base_rate": 0.1023
+    },
+    "xgboost_no_text": {
+      "auroc": 0.7104,
+      "auprc": 0.234,
+      "brier": 0.0863,
+      "flagged_top10": 0.2677,
+      "flagged_top20": 0.429,
+      "base_rate": 0.1023
+    },
+    "xgboost_WITH_LEAKY_FEATURES": {
+      "auroc": 0.8206,
+      "auprc": 0.4796,
+      "brier": 0.1287,
+      "flagged_top10": 0.4935,
+      "flagged_top20": 0.6387,
+      "base_rate": 0.1023
+    }
+  },
+  "accrual_failure": {
+    "xgboost": {
+      "auroc": 0.7482,
+      "auprc": 0.1185,
+      "brier": 0.0237,
+      "flagged_top10": 0.4058,
+      "flagged_top20": 0.4928,
+      "base_rate": 0.0247
+    },
+    "phase_x_area_rate": {
+      "auroc": 0.6797,
+      "auprc": 0.0718,
+      "brier": 0.0241,
+      "flagged_top10": 0.3768,
+      "flagged_top20": 0.5362,
+      "base_rate": 0.0247
+    },
+    "logistic_structured": {
+      "auroc": 0.6862,
+      "auprc": 0.0958,
+      "brier": 0.0237,
+      "flagged_top10": 0.3623,
+      "flagged_top20": 0.4928,
+      "base_rate": 0.0247
+    }
+  }
+}

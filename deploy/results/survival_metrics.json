@@ -1,0 +1,8 @@
+{
+  "c_index_phase_only": 0.5729,
+  "c_index_cox": 0.6326,
+  "c_index_xgb_cox": 0.727,
+  "n_train": 7620,
+  "n_test": 3268,
+  "test_event_rate": 0.8293
+}

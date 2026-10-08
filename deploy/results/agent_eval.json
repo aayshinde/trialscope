@@ -1,0 +1,14 @@
+{
+  "n": 12,
+  "accuracy": 0.833,
+  "accuracy_by_family": {
+    "count": 1.0,
+    "lookup": 1.0,
+    "rate": 1.0,
+    "top_risk": 0.333
+  },
+  "answers_with_unverified_ids": 0,
+  "mean_tool_calls": 1.0,
+  "p50_latency_s": 13.559999999999999,
+  "cost_per_question_usd": 0.0
+}
