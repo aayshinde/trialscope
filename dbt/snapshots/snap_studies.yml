@@ -1,0 +1,15 @@
+snapshots:
+  - name: snap_studies
+    description: >
+      SCD type 2 history of every trial. A new version is opened whenever one of the tracked
+      columns changes between loads; dbt_valid_from is the ClinicalTrials.gov update date.
+      The v2 API only serves the current record, so this table is the ONLY source of
+      plan changes over time (status transitions, enrollment target and completion-date slips).
+    relation: source('raw', 'studies')
+    config:
+      schema: snapshots
+      unique_key: nct_id
+      strategy: check
+      check_cols: [overall_status, why_stopped, start_date, primary_completion_date, primary_completion_type,
+                   enrollment_count, enrollment_type, phase, lead_sponsor_name, n_locations]
+      updated_at: last_update_ts

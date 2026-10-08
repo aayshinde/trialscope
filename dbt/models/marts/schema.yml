@@ -1,0 +1,31 @@
+version: 2
+models:
+  - name: fct_trials
+    description: One row per interventional trial with leakage-safe start-time attributes, outcomes and history.
+    columns:
+      - name: nct_id
+        tests: [unique, not_null]
+      - name: status_group
+        tests:
+          - accepted_values:
+              arguments:
+                values: [completed, terminated, withdrawn, suspended, active, unknown, other]
+      - name: sponsor_key
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_sponsors')
+                field: sponsor_key
+      - name: terminated_flag
+        tests:
+          - accepted_values:
+              arguments:
+                values: [0, 1]
+                quote: false
+      - name: sponsor_prior_term_rate
+        tests: [not_null]
+  - name: dim_sponsors
+    columns:
+      - name: sponsor_key
+        tests: [unique, not_null]

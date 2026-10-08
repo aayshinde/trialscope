@@ -1,0 +1,7 @@
+trialscope:
+  target: local
+  outputs:
+    local:
+      type: duckdb
+      path: "{{ env_var('TRIALSCOPE_WAREHOUSE', '../warehouse/trialscope.duckdb') }}"
+      threads: 4

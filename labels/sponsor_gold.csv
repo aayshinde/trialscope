@@ -1,0 +1,39 @@
+raw_name,entity
+Pfizer,pfizer
+Pfizer Inc.,pfizer
+"Pfizer, Inc",pfizer
+PFIZER INC,pfizer
+Hoffmann-La Roche,roche
+Roche,roche
+F. Hoffmann-La Roche Ltd,roche
+"Genentech, Inc.",genentech
+Novartis Pharmaceuticals,novartis
+Novartis,novartis
+Novartis Pharma AG,novartis
+Merck Sharp & Dohme LLC,msd
+Merck Sharp & Dohme Corp.,msd
+Merck Sharp and Dohme,msd
+"Merck KGaA, Darmstadt, Germany",merck_kgaa
+Bristol-Myers Squibb,bms
+Bristol Myers Squibb,bms
+GlaxoSmithKline,gsk
+GSK,gsk
+AstraZeneca,astrazeneca
+AstraZeneca AB,astrazeneca
+Eli Lilly and Company,lilly
+National Cancer Institute (NCI),nci
+National Cancer Institute,nci
+M.D. Anderson Cancer Center,mdacc
+MD Anderson Cancer Center,mdacc
+Mayo Clinic,mayo
+"Mayo Clinic, Rochester",mayo
+"University of California, San Francisco",ucsf
+UCSF,ucsf
+"University of California, Los Angeles",ucla
+University of California San Diego,ucsd
+Sanofi,sanofi
+"Sanofi Pasteur, a Sanofi Company",sanofi_pasteur
+"Janssen Research & Development, LLC",janssen
+Janssen Research & Development LLC,janssen
+Massachusetts General Hospital,mgh
+Brigham and Women's Hospital,bwh
