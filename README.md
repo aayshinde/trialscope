@@ -35,6 +35,8 @@ flowchart LR
     O[Prefect: daily update,<br/>weekly retrain] -.-> A
 ```
 
+**[Live demo: https://trialscope-6ysgwfp6gstc7h7v8gxkan.streamlit.app/](https://trialscope-6ysgwfp6gstc7h7v8gxkan.streamlit.app/)** (runs on free hosting and may take ~30 s to wake up if idle)
+
 ## What you get
 
 ![Overview](docs/img/overview.png)
